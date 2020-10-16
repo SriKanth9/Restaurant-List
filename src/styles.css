@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html{
+  box-sizing: border-box
+}
+
+*,*:before,*:after{
+  box-sizing: border-box
+}
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none
+}
+
+.Container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.searchResult ul{
+    display: grid;
+}
+ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(160px ,1fr))
+}

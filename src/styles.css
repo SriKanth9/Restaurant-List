@@ -17,7 +17,9 @@ body{
 }
 
 li{
-  list-style-type: none
+  list-style-type: none;
+  border:1px solid;
+  margin:10px;
 }
 
 .Container{
@@ -32,4 +34,14 @@ li{
 ul{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(160px ,1fr))
+}
+
+.searchResult h3{
+text-align: left;
+padding-left: 2%;
+}
+
+.rating{
+text-align: right;
+padding-right: 4px;
 }

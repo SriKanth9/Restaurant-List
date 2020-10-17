@@ -5,9 +5,13 @@ const Loading = (props) => {
   const list = Object.keys(restaurantDetails);
   const rest = restaurantDetails[list].map((item, idx) => (
     <li key={idx + 2}>
-      <h3>{item.Brand}</h3>
+      <h2>{item.Brand}</h2>
       <p>{item.Variety}</p>
-      <p>{item.Stars}</p>
+      {typeof item.Stars !== "string" ? (
+        <p className="rating">*{item.Stars}</p>
+      ) : (
+        <p className="rating">*0</p>
+      )}
     </li>
   ));
 

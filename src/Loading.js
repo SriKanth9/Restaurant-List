@@ -6,7 +6,9 @@ const Loading = (props) => {
   const rest = restaurantDetails[list].map((item, idx) => (
     <li key={idx + 2}>
       <h2>{item.Brand}</h2>
+      <p className="restStyle">Style:{item.Style}</p>
       <p>{item.Variety}</p>
+      <p>Made in: {item.Country}</p>{" "}
       {typeof item.Stars !== "string" ? (
         <p className="rating">*{item.Stars}</p>
       ) : (
